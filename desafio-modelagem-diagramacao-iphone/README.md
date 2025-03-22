@@ -1,18 +1,93 @@
-## Getting Started
+## Desafio: Modelagem e Diagramação de um Componente iPhone
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Neste desafio, o objetivo foi modelar e diagramar a representação UML de um componente do iPhone, cobrindo três funcionalidades principais: Reprodutor Musical, Aparelho Telefônico e Navegador na Internet. Com base no vídeo de lançamento do iPhone de 2007, foram identificadas as funcionalidades-chave e estruturadas de forma a representar o funcionamento do dispositivo.
 
-## Folder Structure
+## Funcionalidades Modeladas
+Reprodutor Musical
 
-The workspace contains two folders by default, where:
+Métodos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+tocar(): Inicia a reprodução de música.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+pausar(): Interrompe a reprodução da música.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+selecionarMusica(String musica): Seleciona uma música para ser tocada.
 
-## Dependency Management
+Aparelho Telefônico
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Métodos:
+
+ligar(String numero): Realiza uma chamada telefônica para o número especificado.
+
+atender(): Atende uma chamada recebida.
+
+iniciarCorreioVoz(): Inicia o serviço de correio de voz.
+
+Reprodutor Musical
+
+Métodos:
+
+tocar(): Inicia a reprodução de música.
+
+pausar(): Interrompe a reprodução da música.
+
+selecionarMusica(String musica): Seleciona uma música para ser tocada.
+
+Aparelho Telefônico
+
+Métodos:
+
+ligar(String numero): Realiza uma chamada telefônica para o número especificado.
+
+atender(): Atende uma chamada recebida.
+
+iniciarCorreioVoz(): Inicia o serviço de correio de voz.
+
+## Objetivo
+
+O desafio consistiu em criar um diagrama UML para representar as classes e interfaces responsáveis por cada funcionalidade do iPhone. A modelagem buscou refletir a estrutura das funcionalidades de forma clara e eficiente. Além disso, a implementação das classes e interfaces foi realizada em Java, utilizando os métodos mencionados para cada uma das funcionalidades.
+
+## Tecnologias Utilizadas
+
+## Desafio: Modelagem e Diagramação de um Componente iPhone
+
+Neste desafio, o objetivo foi modelar e diagramar a representação UML de um componente do iPhone, cobrindo três funcionalidades principais: Reprodutor Musical, Aparelho Telefônico e Navegador na Internet. Com base no vídeo de lançamento do iPhone de 2007, foram identificadas as funcionalidades-chave e estruturadas de forma a representar o funcionamento do dispositivo.
+
+## Funcionalidades Modeladas
+
+# Reprodutor Musical
+
+Métodos:
+tocar(): Inicia a reprodução de música.
+pausar(): Interrompe a reprodução da música.
+selecionarMusica(String musica): Seleciona uma música para ser tocada.
+
+# Aparelho Telefônico
+
+Métodos:
+ligar(String numero): Realiza uma chamada telefônica para o número especificado.
+atender(): Atende uma chamada recebida.
+iniciarCorreioVoz(): Inicia o serviço de correio de voz.
+
+# Reprodutor Musical
+
+Métodos:
+tocar(): Inicia a reprodução de música.
+pausar(): Interrompe a reprodução da música.
+selecionarMusica(String musica): Seleciona uma música para ser tocada.
+
+# Aparelho Telefônico
+
+Métodos:
+ligar(String numero): Realiza uma chamada telefônica para o número especificado.
+atender(): Atende uma chamada recebida.
+iniciarCorreioVoz(): Inicia o serviço de correio de voz.
+
+## Objetivo
+
+O desafio consistiu em criar um diagrama UML para representar as classes e interfaces responsáveis por cada funcionalidade do iPhone. A modelagem buscou refletir a estrutura das funcionalidades de forma clara e eficiente. Além disso, a implementação das classes e interfaces foi realizada em Java, utilizando os métodos mencionados para cada uma das funcionalidades.
+
+## Tecnologias Utilizadas
+
+Software: EdrawMax para a diagramação UML.
+Linguagem: Java, utilizando a IDE VS Code para implementação.
