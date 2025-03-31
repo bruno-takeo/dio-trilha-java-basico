@@ -1,18 +1,29 @@
-## Getting Started
+# 💻 Banco Digital com Java e POO  
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto foi desenvolvido como parte do meu aprendizado em **Programação Orientada a Objetos (POO)** utilizando **Java**. O objetivo foi criar um **banco digital**, aplicando conceitos fundamentais da POO, como **encapsulamento, herança e polimorfismo**.  
 
-## Folder Structure
+## 🏆 Desafios e Aprendizados  
 
-The workspace contains two folders by default, where:
+Durante o desenvolvimento, aprofundei meus conhecimentos na **Stream API**, adquiridos no curso **Ganhando Produtividade com Stream API** da DIO. Além disso, a estruturação do código foi influenciada pelos aprendizados na trilha **Bradesco - Java Cloud Native**, permitindo uma melhor organização do projeto para facilitar a leitura e manutenção do código.  
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Uma das principais **extensões** implementadas além do código base foi a criação de um **menu interativo**, permitindo testar as principais funcionalidades do sistema de forma dinâmica.  
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## ⚙️ Funcionalidades  
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+✔️ Abertura de contas (Conta Corrente e Conta Poupança)  
+✔️ Depósito, saque e transferência entre contas  
+✔️ Emissão de extratos  
+✔️ Listagem de contas cadastradas  
 
-## Dependency Management
+## 🛠️ Tecnologias Utilizadas  
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **Linguagem**: Java  
+- **Paradigma**: Programação Orientada a Objetos  
+- **Recursos Avançados**: Stream API  
+- **IDE**: Visual Studio Code  
+
+## 📌 Como Executar o Projeto  
+
+1. Clone este repositório:  
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
