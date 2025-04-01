@@ -37,6 +37,9 @@ O código é modularizado em diferentes classes, cada uma com responsabilidades 
 - Define um modelo formatado para exibição do tabuleiro no terminal.
 - Utiliza placeholders (`%s`) para mostrar os números de forma organizada.
 
+### **5. ************`Parâmetro args`************
+  O parâmetro args incluído no JSON permite a passagem de argumentos dinâmicos para a execução do programa. Isso possibilita a configuração personalizada do jogo, como a definição de um tabuleiro inicial, nível de dificuldade ou outras opções sem precisar modificar diretamente o código-fonte. Essa abordagem torna o programa mais flexível e reutilizável, pois os valores podem ser ajustados conforme necessário em tempo de execução.
+
 ## 🎮 Como Jogar
 
 1. Compile e execute o programa.
