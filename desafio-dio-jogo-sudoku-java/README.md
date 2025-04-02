@@ -1,18 +1,61 @@
-## Getting Started
+# Desafio DIO Sudoku com Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Sobre o Projeto
 
-## Folder Structure
+Este projeto consiste em um jogo de **Sudoku** implementado em **Java**, totalmente baseado no terminal. O objetivo é permitir que o usuário jogue Sudoku de maneira interativa, com opções para inserir números, remover valores, visualizar o tabuleiro e verificar o status do jogo.
 
-The workspace contains two folders by default, where:
+## 🛠 Estrutura do Código
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O código é modularizado em diferentes classes, cada uma com responsabilidades específicas:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### **1. ************`App.java`************ (Classe Principal)**
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Gerencia a interação com o usuário através de um menu no terminal.
+- Chama métodos responsáveis por iniciar o jogo, modificar o tabuleiro e verificar erros.
+- Mantém um loop que permite ao usuário interagir até decidir sair.
 
-## Dependency Management
+### **2. ************`Quadro.java`************ (Tabuleiro do Sudoku)**
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Armazena a grade do Sudoku utilizando uma lista de listas (`List<List<Espaco>>`).
+- Controla a lógica de alteração dos valores e verifica se o jogo está completo ou possui erros.
+- Métodos principais:
+  - `alterarValor(int coluna, int linha, int valor)`: Insere um número em uma posição.
+  - `limparValor(int coluna, int linha)`: Remove um número do tabuleiro.
+  - `temErro()`: Verifica se há números repetidos na linha, coluna ou bloco 3x3.
+  - `jogoFinalizado()`: Confirma se o Sudoku foi resolvido corretamente.
+
+### **3. ************`Espaco.java`************ (Casa do Sudoku)**
+
+- Representa cada célula do tabuleiro.
+- Atributos:
+  - `atual`: Número atual na célula.
+  - `esperado`: Valor correto (usado para validação).
+  - `fixo`: Indica se o número é fixo (não pode ser alterado pelo jogador).
+
+### **4. ************`ModeloQuadro.java`************ (Modelo de Impressão)**
+
+- Define um modelo formatado para exibição do tabuleiro no terminal.
+- Utiliza placeholders (`%s`) para mostrar os números de forma organizada.
+
+### 5. ************`Parâmetro args`************
+  O parâmetro args incluído no JSON permite a passagem de argumentos dinâmicos para a execução do programa. Isso possibilita a configuração personalizada do jogo, como a definição de um tabuleiro inicial, nível de dificuldade ou outras opções sem precisar modificar diretamente o código-fonte. Essa abordagem torna o programa mais flexível e reutilizável, pois os valores podem ser ajustados conforme necessário em tempo de execução.
+
+## 🎮 Como Jogar
+
+1. Compile e execute o programa.
+2. Escolha uma das opções no menu:
+   - `1`: Iniciar um novo jogo.
+   - `2`: Inserir um número em uma posição específica.
+   - `3`: Remover um número do tabuleiro.
+   - `4`: Exibir o tabuleiro atual.
+   - `5`: Verificar se há erros no jogo.
+   - `6`: Limpar o tabuleiro (reiniciar o jogo mantendo os números fixos).
+   - `7`: Finalizar o jogo (checar se está completo e correto).
+   - `8`: Sair do jogo.
+
+## 🚀 Melhorias Futuras
+
+- Implementação de níveis de dificuldade.
+- Interface gráfica para facilitar a jogabilidade.
+- Algoritmo para gerar tabuleiros aleatórios.
+
